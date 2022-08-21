@@ -1,0 +1,7 @@
+/tests/not-used/
+/src/not-used/
+.idea/
+
+vendor/
+
+*.cache
