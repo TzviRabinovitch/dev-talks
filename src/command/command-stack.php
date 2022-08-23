@@ -1,10 +1,10 @@
 <?php
 
 require_once 'interfaces\command-stack-interface.php';
-class CommandStackManager implements CommandStackInterface
+
+class CommandStack implements CommandStackInterface
 {
 	private $commands ;
-
 
 	public function __construct()
 	{
@@ -17,21 +17,17 @@ class CommandStackManager implements CommandStackInterface
 	public function execute(CommandInterface $command)
 	{
 		try {
-			$command->run();
+			$command->do();
 			$this->commands->add($command);
 
 		} catch (Exception $e) {
 			echo "Exception in CommandStack";
 		}
-
-
 	}
 
 	public function undo()
 	{
 		$last_command =$this->commands->pop();
 		$last_command->undo();
-
-
 	}
 }

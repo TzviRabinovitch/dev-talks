@@ -2,7 +2,6 @@
 
 interface CommandInterface
 {
-	public function run();
-
+	public function do();
 	public function undo();
 }

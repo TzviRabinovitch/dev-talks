@@ -2,7 +2,7 @@
 
 require_once "src/command/interfaces/command-Interface.php";
 
-class BoldCommand implements CommandInterface
+class UnderlineCommand implements CommandInterface
 {
 
 	private $text;
@@ -10,7 +10,7 @@ class BoldCommand implements CommandInterface
 
 	public function __construct($text, $output)
 	{
-		$this->text = "<b>". $text ."<b>";
+		$this->text = "<U>". $text ."</u>";
 		$this->output = $output;
 	}
 

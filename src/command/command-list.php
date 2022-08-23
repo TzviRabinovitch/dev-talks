@@ -23,7 +23,7 @@ final class CommandList
 	 *
 	 * @return void
 	 */
-	public function add(CommandInterface $command): void
+	public function add(CommandInterface $command)
 	{
 		$this->commands[] = $command;
 	}
@@ -38,9 +38,8 @@ final class CommandList
 		return $this->commands;
 	}
 
-
 	public function pop(): CommandInterface
 	{
-		return array_pop($this->commands);;
+		return array_pop($this->commands);
 	}
 }

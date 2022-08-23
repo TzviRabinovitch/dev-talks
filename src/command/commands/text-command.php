@@ -14,7 +14,7 @@ class TextCommand implements CommandInterface
 		$this->output = $output;
 	}
 
-	public function run()
+	public function do()
 	{
 		$this->output->add($this->text);
 	}
