@@ -5,6 +5,7 @@ final class CommandList
 	 * @var CommandInterface[] The users
 	 */
 	private  $commands;
+	
 
 	/**
 	 * The constructor.
