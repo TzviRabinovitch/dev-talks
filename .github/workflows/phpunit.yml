@@ -1,0 +1,21 @@
+name: PHPUnit
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: runs-on: ubuntu-latest
+    name: PHPUnit
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@master
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+      - name: Install Dependencies
+        run: |
+          composer install
+      - name: Test
+        run: |
+          composer test
