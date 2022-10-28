@@ -11,8 +11,8 @@ use Tests\DependencyInjection\Mock\D;
 use Tests\DependencyInjection\Mock\SomeContract;
 use Tests\DependencyInjection\Mock\ContractImpl;
 
+require_once __DIR__ . '/../../src/dependency-injection/di-container.php';
 require_once __DIR__ . '/mock/mock-classes.php';
-require_once 'src/dependency-injection/di-container.php';
 
 class DiContainerTest extends TestCase
 {
