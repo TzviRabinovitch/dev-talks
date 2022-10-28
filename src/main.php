@@ -3,7 +3,7 @@
 require_once __DIR__ . "/common/output.php";
 require_once __DIR__ . "/command/command-factory.php";
 require_once __DIR__ . "/command/command-type.php";
-require_once __DIR__ . "/command/Command-stack.php";
+require_once __DIR__ . "/command/command-stack.php";
 
 class Main{
 
