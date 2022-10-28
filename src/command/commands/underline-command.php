@@ -1,6 +1,6 @@
 <?php
 
-require_once "src/command/interfaces/command-Interface.php";
+require_once __DIR__ . "/../interfaces/command-Interface.php";
 
 class UnderlineCommand implements CommandInterface
 {

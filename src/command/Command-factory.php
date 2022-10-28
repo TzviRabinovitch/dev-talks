@@ -1,5 +1,5 @@
 <?php
-require_once "src/command/interfaces/command-factory-interface.php";
+require_once __DIR__ . "/interfaces/command-factory-interface.php";
 
 class CommandFactory implements CommandFactoryInterface
 {

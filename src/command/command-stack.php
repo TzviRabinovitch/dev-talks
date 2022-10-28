@@ -1,6 +1,6 @@
 <?php
 
-require_once 'interfaces\command-stack-interface.php';
+require_once __DIR__ . '/interfaces/command-stack-interface.php';
 
 class CommandStack implements CommandStackInterface
 {
