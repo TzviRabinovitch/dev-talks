@@ -1,6 +1,6 @@
 <?php
 
-require_once 'output-interface.php';
+require_once __DIR__ . '/output-interface.php';
 
 class output implements OutputInterface
 {
