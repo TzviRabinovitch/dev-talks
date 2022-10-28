@@ -3,7 +3,7 @@
 namespace Tests\DependencyInjection;
 
 use PHPUnit\Framework\TestCase;
-use Src\DependencyInjectio\DiContainer;
+use Src\DependencyInjection\DiContainer;
 use Tests\DependencyInjection\Mock\A;
 use Tests\DependencyInjection\Mock\B;
 use Tests\DependencyInjection\Mock\C;

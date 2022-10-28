@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\DependencyInjectio;
+namespace Src\DependencyInjection;
 
 class DiContainer {
     protected $bindings = [];
